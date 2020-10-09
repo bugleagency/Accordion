@@ -1,659 +1,1097 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Accordion</title>
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-
-<style>
-		
-*{
-	padding: 0px;
-	margin: 0px;
-	box-sizing: border-box;
-	font-family: 'Open Sans', sans-serif;
-}
-
-.accordion{
-	background-color: #fff;
-	padding: 50px 0px;
-}
-
-.accordion-wrap{
-	width: 1080px;
-	margin: auto;
-}
-
-.accordion-section{
-	border: 1px solid #002A7F;
-	background-color: #002A7F;
-	margin-bottom: 5px;
-}
-.accordion-section-togle{
-	background-color: #fff;
-
-}
-
-.accordion-section h2{
-	font-weight: 700;
-	font-size: 18px;
-	text-transform: uppercase;
-	padding: 10px 20px;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-
-.accordion-section h2:hover{
-	cursor: pointer;
-}
-
-.accordion-section h2 i{
-	margin-top: 2px;
-}
-
-.accordion-section p{
-	padding: 10px 20px;
-	color: #333;
-	font-size: 17px;
-	font-weight: 500;
-}
-
-.accordion-section ul{
-	margin-left: 15px;
-	padding: 10px 10px 20px 10px;
-	margin-left: 30px;
-}
-
-.accordion-section ul li{
-	font-size: 17px;
-	font-weight: 500;
-	color: #333;
-}
-
-.accordion-section ul li a{
-	color: #002b7f;
-	text-decoration: underline;
-	transition: all 0.5 ease;
-}
-
-.accordion-section ul li a:hover{
-	color: #000;
-	text-decoration: none;
-	transition: all 0.5 ease;
-}
-
-.accordion-sec{
-	height: 0;
-	overflow: hidden;
-	transition: all 0.8s;
-}
-
-.click{
-	background-color: #fff;
-	color: #333;
-	transition: 1s;
-}
-.white{
-	color: white;
-}
-.accordion-sec p span{
-	font-weight: 700;
-	font-family: 'Open Sans', sans-serif;
-}
-
-
-
-/*Responsive style*/
-
-@media all and (max-width: 1300px){
-
-	.accordion-wrap{
-		width: 80%;
-		margin: auto;
-	}
-
-}
-
-@media all and (max-width: 360px){
-
-	.accordion-section h2{
-		font-size: 14px;
-	}
-
-	.accordion-section p{
-		font-size: 14px;
-	}
-
-	.accordion-section ul li{
-		font-size: 14px;
-	}
-
-}
-
-
-
-
-</style>
-
-</head>
-<body>
-
-	<section class="accordion">
-		<div class="accordion-wrap">
-			<div class="accordion-content">
-				<div class="accordion-section">
-
-					<h2 class="white">Bangladesh <i class="fas fa-plus-circle"></i></h2>
-
-					<div class="accordion-sec close">
-
-						<p>The Bangladesh Association of Commonwealth Scholars and Fellows (BACSAF) is coordinated by <span>Rafiqul Islam</span> (2005 Commonwealth Professional Fellow, University of Nottingham). The association is supported in its work by the British Council in Bangladesh.</p>
-
-						<ul>
-							<li><a target="_blank" href="https://www.facebook.com/groups/1521066128156091">Association Facebook group</a></li>
-							<li><a target="_blank" href="https://www.linkedin.com/groups/6879243">Association LinkedIn group</a></li>
-							<li><a target="_blank" href="www.bacsaf-bd.org">Association website</a></li>
-							<li>For more information, email <a href="mailto:info@bacsaf-bd.org">info@bacsaf-bd.org</a></li>
-						</ul>
-
-					</div>
-
-				</div>
-
-				<div class="accordion-section">
-
-					<h2 class="white">Barbados <i class="fas fa-plus-circle"></i></h2>
-
-					<div class="accordion-sec close">
-
-						<p>The alumni association in Barbados is coordinated by <span>Corey Drakes</span> (2014 Commonwealth Scholar, MSc Physics and Engineering in Medicine, University College London).</p>
-
-						<ul>
-							<li><a target="_blank" href="https://www.facebook.com/barbadoscommonwealthscholaralumnigroup">Association Facebook page</a></li>
-							<li>For more information, email <a href="mailto:bcalumni246@gmail.com">bcalumni246@gmail.com</a></li>
-						</ul>
-
-					</div>
-
-				</div>
-
-				<div class="accordion-section">
-					
-					<h2 class="white">Cameroon <i class="fas fa-plus-circle"></i></h2>
-
-					<div class="accordion-sec close">
-
-						<p>The alumni association in Barbados is coordinated by <span>Corey Drakes</span> (2014 Commonwealth Scholar, MSc Physics and Engineering in Medicine, University College London).</p>
-
-						<ul>
-							<li><a target="_blank" href="https://www.facebook.com/barbadoscommonwealthscholaralumnigroup">Association Facebook page</a></li>
-							<li>For more information, email <a href="mailto:bcalumni246@gmail.com">bcalumni246@gmail.com</a></li>
-						</ul>
-
-					</div>
-
-				</div>
-
-				<div class="accordion-section">
-					
-					<h2 class="white">Canada <i class="fas fa-plus-circle"></i></h2>
-
-					<div class="accordion-sec close">
-
-						<p>The Canadian Association of Commonwealth Scholars and Fellows (CACSF) is coordinated by <span>Kevin Goheen</span> (1983 Commonwealth Scholar, PhD Naval Architecture, University College London).</p>
-
-						<ul>
-							<li><a target="_blank" href="https://www.linkedin.com/groups/8305511/">Association LinkedIn group</a></li>
-							<li>For more information, email <a href="mailto:alumni@cscuk.org.uk">alumni@cscuk.org.uk</a></li>
-						</ul>
-
-					</div>
-
-				</div>
-
-				<div class="accordion-section ">
-					
-					<h2 class="white">Dominica <i class="fas fa-plus-circle"></i></h2>
-
-					<div class="accordion-sec close">
-
-						<p>Commonwealth of Dominica Commonwealth Scholars  Alumni Association (CDCSAA) is managed by a steering committee, coordinated by <span>Jo-Ann George</span> (2008 Commonwealth Scholar, Management and Implementation of Development Projects, University of Manchester).</p>
-
-						<ul>
-							<li><a target="_blank" href="https://www.facebook.com/groups/1173788099493593/">Association Facebook page</a></li>
-							<li>For more information, email <a href="mailto:dcommonwealthscholar@gmail.com">dcommonwealthscholar@gmail.com</a></li>
-						</ul>
-
-					</div>
-
-				</div>
-
-				<div class="accordion-section click-six">
-					
-					<h2 class="white">Ghana <i class="fas fa-plus-circle"></i></h2>
-
-					<div class="accordion-sec close">
-
-						<p>Commonwealth Scholars & Fellows Alumni, Ghana (CoSFAG) is coordinated by an elected Executive Committee, led by its President <span>John Boulard Forkuor</span> (2010 Commonwealth Shared Scholar, MSc Social Work and Studies, Durham University) and Vice President <span>Solomon Mensa</span> (2009 Commonwealth Shared Scholar, MSc International Banking and Finance, University of Strathclyde). The association is supported in its work by the British Council in Ghana.</p>
-
-						<ul>
-							<li><a target="_blank" href="https://www.facebook.com/groups/1655642108023804">Association Facebook page</a></li>
-							<li>For more information, email <a href="mailto:cosfag.gh@gmail.com">cosfag.gh@gmail.com</a></li>
-						</ul>
-
-					</div>
-
-				</div>
-
-				<div class="accordion-section">
-					
-					<h2 class="white">Gibraltar <i class="fas fa-plus-circle"></i></h2>
-
-					<div class="accordion-sec close">
-
-						<p>The alumni association in Gibraltar is coordinated by <span>Daniella Tilbury</span> (1990 Commonwealth Scholar, PhD Environmental Education, University of Cambridge).</p>
-
-						<ul>
-							<li>For more information, email <a href="mailto:alumni@cscuk.org.uk">alumni@cscuk.org.uk</a></li>
-						</ul>
-
-					</div>
-
-				</div>
-
-
-				<div class="accordion-section click-eight">
-					
-					<h2 class="white">Guyana <i class="fas fa-plus-circle"></i></h2>
-
-					<div class="accordion-sec close">
-
-						<p>The alumni association in Guyana is coordinated by <span>Gina Arjoon</span> (2009 Commonwealth Scholar, MSc Health Economics, University of York).</p>
-
-						<ul>
-							<li><a target="_blank" href="https://www.linkedin.com/groups/8532314/">Association LinkedIn group</a></li>
-							<li>For more information, email <a href="mailto:alumni@cscuk.org.uk">alumni@cscuk.org.uk</a></li>
-						</ul>
-
-					</div>
-
-				</div>
-
-				<div class="accordion-section click-nine">
-					
-					<h2 class="white">India <i class="fas fa-plus-circle"></i></h2>
-
-					<div class="accordion-sec close">
-
-						<p>The Indian National Alumni Association of Commonwealth Scholars and Fellows of UK is coordinated by its President <span>Dhruva Chaudhry</span> (2009 Commonwealth Academic Fellow, University Hospital Aintree). The association is supported in its work by the British Council in India.</p>
-
-						<ul>
-							<li><a target="_blank" href="https://www.linkedin.com/groups/6749270/">Association LinkedIn group</a></li>
-							<li><a target="_blank" href="http://www.acsfindia.org/">Association website</a></li>
-							<li>For more information, email <a href="mailto:info@acsfindia.org">info@acsfindia.org</a></li>
-						</ul>
-
-					</div>
-
-				</div>
-
-				<div class="accordion-section click-ten">
-					
-					<h2 class="white">Jamaica <i class="fas fa-plus-circle"></i></h2>
-
-					<div class="accordion-sec close">
-
-						<p>The alumni association in Jamaica is coordinated by <span>Tarik Dixon</span> (2013 Commonwealth Scholar, MSc Spatial Planning, University College London).</p>
-
-						<ul>
-							<li>For more information and to join the association Facebook group, email <a href="mailto:commonwealthscholar@gmail.com">commonwealthscholar@gmail.com</a></li>
-						</ul>
-
-					</div>
-
-				</div>
-
-				<div class="accordion-section click-eleven">
-					
-					<h2 class="white">Kenya <i class="fas fa-plus-circle"></i></h2>
-
-					<div class="accordion-sec close">
-
-						<p>The Commonwealth Scholarships Alumni Association of Kenya (CSAAK) is coordinated by <span>Maurice Okoth</span> (2009 Commonwealth Academic Fellow, Physical Chemistry, University of Strathclyde). The association is supported in its work by the British Council in Kenya.</p>
-
-						<ul>
-							<li>For more information, email <a href="mailto:csc.alumni.kenyachapter@gmail.com">csc.alumni.kenyachapter@gmail.com</a></li>
-						</ul>
-
-					</div>
-
-				</div>
-
-				<div class="accordion-section click-twelve">
-					
-					<h2 class="white">Lesotho <i class="fas fa-plus-circle"></i></h2>
-
-					<div class="accordion-sec close">
-
-						<p>The alumni association in Lesotho is coordinated by <span>Setempe Phoka</span> (2015 Commonwealth Professional Fellow, Dolen Cymru Lesotho Education).</p>
-
-						<ul>
-							<li>For more information, email <a href="http://cscuk.dfid.gov.uk/alumni/associations/alumni@cscuk.org.uk">alumni@cscuk.org.uk</a></li>
-						</ul>
-
-					</div>
-
-				</div>
-
-				<div class="accordion-section click-thirteen">
-					
-					<h2 class="white">Malawi <i class="fas fa-plus-circle"></i></h2>
-
-					<div class="accordion-sec close">
-
-						<p>The alumni association in Malawi is coordinated by an Executive Committee, led by its Chairperson <span>Chrispin Gogoda Mbewe</span> (2014 Commonwealth Scholar, MSc Renewable Energy Systems Engineering, Loughborough University; 2017 Scholar, PhD Renewable Energy ). The association is supported in its work by the British Council in Malawi.</p>
-
-						<ul>
-							<li><a target="_blank" href="https://www.facebook.com/MwCSCAlumni/">Association Facebook page</a></li>
-							<li><a target="_blank" href="https://twitter.com/MwCSCAlumni">Association Twitter</a></li>
-							<li>For more information, email <a href="mailto:Mw-CSC-Alumni@googlegroups.com">Mw-CSC-Alumni@googlegroups.com</a></li>
-						</ul>
-
-					</div>
-
-				</div>
-
-				<div class="accordion-section click-fourteen">
-					
-					<h2 class="white">Malaysia <i class="fas fa-plus-circle"></i></h2>
-
-					<div class="accordion-sec close">
-
-						<p>The alumni association in Malaysia is coordinated by <span>Vaani Muniandy</span> (2015 Commonwealth Scholar, MSc Aquatic Pathobiology, University of Stirling).</p>
-
-						<ul>
-							<li><a target="_blank" href="https://www.facebook.com/groups/1275116749246290/">Association Facebook page</a></li>
-							<li>For more information, email <a href="http://cscuk.dfid.gov.uk/alumni/associations/alumni@cscuk.org.uk">alumni@cscuk.org.uk</a></li>
-						</ul>
-
-					</div>
-
-				</div>
-
-				<div class="accordion-section click-fifteen">
-					
-					<h2 class="white">Mauritius <i class="fas fa-plus-circle"></i></h2>
-
-					<div class="accordion-sec close">
-
-						<p>The United Kingdom Commonwealth Alumni – Mauritius Chapter (UKCAC) is coordinated by its President <span>Satyadev Rosunee</span> (1992 Commonwealth Scholar, MSc Textile Dyeing and Finishing, University of Leeds; 1999 Commonwealth Scholar ), Vice President <span>Roshan Ramessur</span> (1985 Commonwealth Scholar, BSc Marine Chemistry, Bangor University), and Secretary <span>Madev Balloo</span> (1998 Canadian Commonwealth Scholar, MSc Agricultural Economics, University of Guelph).</p>
-
-						<ul>
-							<li><a target="_blank" href="https://www.facebook.com/groups/154972611690163/about/">Association Facebook page</a></li>
-							<li><a target="_blank" href="http://ukcac-mauritius.tripod.com/">Association website</a></li>
-							<li>For more information, email <a href="http://cscuk.dfid.gov.uk/alumni/associations/alumni@cscuk.org.uk">alumni@cscuk.org.uk</a></li>
-						</ul>
-
-					</div>
-
-				</div>
-
-				<div class="accordion-section click-sixteen">
-					
-					<h2 class="white">Namibia <i class="fas fa-plus-circle"></i></h2>
-
-					<div class="accordion-sec close">
-
-						<p>The alumni association in Namibia is coordinated by <span>Victoria Chali</span> (2017 Commonwealth Professional Fellow, Cardiff University).</p>
-
-						<ul>
-							<li><a target="_blank" href="https://www.facebook.com/groups/302611070252579/">Association Facebook page</a></li>
-							<li>For more information, email <a href="mailto:alumni@cscuk.org.uk">alumni@cscuk.org.uk</a></li>
-						</ul>
-
-					</div>
-
-				</div>
-
-				<div class="accordion-section click-seventeen">
-					
-					<h2 class="white">Nigeria <i class="fas fa-plus-circle"></i></h2>
-
-					<div class="accordion-sec close">
-
-						<p>The Commonwealth Scholars and Fellows Alumni Association Nigeria (COSFAN) is coordinated by an Executive Committee, led by its President <span>Ruth Abiola Adimula</span> (2010 Commonwealth Professional Fellow, The Haven Wolverhampton), Vice President <span>Cyril Ojochide Akagwu</span> (2013 Commonwealth Scholar, MSc Aviation Medicine, King’s College London) and General Secretary <span>Chidi Ezegwu</span> (2011 Commonwealth Shared Scholar, MA Education, Gender and International Development, UCL Institute of Education). The association is supported in its work by the British Council in Nigeria.</p>
-
-						<ul>
-							<li><a target="_blank" href="https://www.facebook.com/Commonwealth-Scholars-and-Fellows-Alumni-Association-of-Nigeria-Cosfan-2180588168929201/">Association Facebook page</a></li>
-							<li>For more information, email <a href="http://cscuk.dfid.gov.uk/alumni/associations/alumni@cscuk.org.uk">alumni@cscuk.org.uk</a></li>
-						</ul>
-
-					</div>
-
-				</div>
-
-				<div class="accordion-section click-eighteen">
-					
-					<h2 class="white">Pakistan <i class="fas fa-plus-circle"></i></h2>
-
-					<div class="accordion-sec close">
-
-						<p>The Pakistan Alumni Association Commonwealth Scholars (PAACS) is coordinated by <span>Khadija Amir</span> (2014 Commonwealth Shared Scholar, MSc Sustainable Development, University of Exeter). The association is supported in its work by the British Council in Pakistan.</p>
-
-						<ul>
-							<li><a target="_blank" href="https://www.facebook.com/groups/521484144717677/">Association Facebook page</a></li>
-							<li>For more information, email <a href="mailto:alumni@cscuk.org.uk">alumni@cscuk.org.uk</a></li>
-						</ul>
-
-					</div>
-
-				</div>
-
-				<div class="accordion-section click-nineteen">
-					
-					<h2 class="white">Rwanda <i class="fas fa-plus-circle"></i></h2>
-
-					<div class="accordion-sec close">
-
-						<p>The Rwanda Commonwealth Scholars and Fellows alumni association is coordinated by <span>Gatera Fiston Kitema</span> (2018 Commonwealth Shared Scholar, MSc Public Health for Eye Care, London School of Hygiene and Tropical Medicine).</p>
-
-						<ul>
-							<li><a target="_blank" href="https://www.facebook.com/groups/998959960448862/?ref=group_browse/">Association Facebook page</a></li>
-							<li>For more information, email <a href="mailto:alumni@cscuk.org.uk">alumni@cscuk.org.uk</a></li>
-						</ul>
-
-					</div>
-
-				</div>
-
-				<div class="accordion-section click-twenty">
-					
-					<h2 class="white">St Lucia <i class="fas fa-plus-circle"></i></h2>
-
-					<div class="accordion-sec close">
-
-						<p>The alumni association in St Lucia is coordinated by <span>Margaret Henry Samuel</span> (2012 Commonwealth Distance Learning Scholar, MPH Public Health, University of Liverpool).</p>
-
-						<ul>
-							<li><a target="_blank" href="https://www.facebook.com/Alumni-Saint-Lucia-Association-1751393298483887/">Association Facebook page</a></li>
-							<li>For more information, email <a href="mailto:alumni@cscuk.org.uk">alumni@cscuk.org.uk</a></li>
-						</ul>
-
-					</div>
-
-				</div>
-
-				<div class="accordion-section">
-					
-					<h2 class="white">Sierra Leone <i class="fas fa-plus-circle"></i></h2>
-
-					<div class="accordion-sec close">
-
-						<p>The alumni association in Sierra Leone is coordinated by <span>Sonnia-Magba Bu-Buakei Jabbi</span> (2003 Commonwealth Shared Scholar, MSc Management Science, De Montfort University). The association is supported in its work by the British Council in Sierra Leone.</p>
-
-						<ul>
-							<li>For more information, email <a href="mailto:csfp.sierraleone@britishcouncil.org">csfp.sierraleone@britishcouncil.org</a></li>
-						</ul>
-
-					</div>
-
-				</div>
-
-				<div class="accordion-section click-twentytwo">
-					
-					<h2 class="white">South Africa <i class="fas fa-plus-circle"></i></h2>
-
-					<div class="accordion-sec close">
-
-						<p>The Commonwealth Scholars and Fellows Alumni of South Africa (CoSFA-SA) is coordinated by a Steering Committee comprised of the following members: <span>Ryan Daniels</span> (2015 Commonwealth Scholar, PhD Zoology, University of Oxford), <span>Lucia Makamure</span> (2016 Commonwealth Distance Learning Scholar, MA Public Policy and Management, University of York), and <span>Keneilwe Mampuru</span> (2017 Commonwealth Professional Fellow, Learn to Re-create). The association is supported in its work by the British Council in</p>
-
-						<ul>
-							<li><a target="_blank" href="https://www.facebook.com/Commonwealth-Scholars-Fellows-Alumni-South-Africa-Public-Page-113309030465741/">Association Facebook page</a></li>
-							<li><a target="_blank" href="https://www.facebook.com/groups/190050932422102/">Association Facebook group</a></li>
-							<li><a target="_blank" href="https://www.linkedin.com/groups/8945762/">Association LinkedIn group</a></li>
-							<li>For more information, email <a href="mailto:alumni@cscuk.org.uk">alumni@cscuk.org.uk</a></li>
-						</ul>
-
-					</div>
-
-				</div>
-
-				<div class="accordion-section">
-					
-					<h2 class="white">Sri Lanka <i class="fas fa-plus-circle"></i></h2>
-
-					<div class="accordion-sec close">
-
-						<p>The alumni association in Sri Lanka is currently being established. The association is supported in its work by the British Council in Sri Lanka.</p>
-
-						<ul>
-							<li><a target="_blank" href="https://www.facebook.com/groups/1323832974302988/">Association Facebook group</a></li>
-							<li>For more information, email <a href="mailto:alumni@cscuk.org.uk">alumni@cscuk.org.uk</a></li>
-						</ul>
-
-					</div>
-
-				</div>
-
-				<div class="accordion-section">
-					
-					<h2 class="white">Tanzania <i class="fas fa-plus-circle"></i></h2>
-
-					<div class="accordion-sec close">
-
-						<p>The alumni association in Tanzania is currently being established. The association is supported in its work by the British Council in Tanzania.</p>
-
-						<ul>
-							<li><a target="_blank" href="https://www.facebook.com/groups/1323832974302988/">Association Facebook group</a></li>
-							<li>For more information, email <a href="mailto:alumni@cscuk.org.uk">alumni@cscuk.org.uk</a></li>
-						</ul>
-
-					</div>
-
-				</div>
-
-				<div class="accordion-section ">
-					
-					<h2 class="white">Trinidad and Tobago <i class="fas fa-plus-circle"></i></h2>
-
-					<div class="accordion-sec close">
-
-						<p>The alumni association in Trinidad and Tobago is coordinated by <span>Sharon Ali Aziz</span> (2016 Commonwealth Shared Scholar, MSc Media Management, University of Stirling).</p>
-
-						<ul>
-							<li><a target="_blank" href="https://www.facebook.com/CommonwealthScholars/">Association Facebook page</a></li>
-							<li>For more information, email <a href="mailto:alumni@cscuk.org.uk">alumni@cscuk.org.uk</a></li>
-						</ul>
-
-					</div>
-
-				</div>
-
-				<div class="accordion-section">
-					
-					<h2 class="white">Uganda <i class="fas fa-plus-circle"></i></h2>
-
-					<div class="accordion-sec close">
-
-						<p>The alumni association in Uganda is coordinated by <span>Bright Arthur Niwagaba</span> (2012 Commonwealth Scholar, MSc Computer Forensics and System Security, University of Greenwich). The association is supported in its work by the British Council in Uganda.</p>
-
-						<ul>
-							<li>For more information, email <a href="http://cscuk.dfid.gov.uk/alumni/associations/alumni@cscuk.org.uk">alumni@cscuk.org.uk</a></li>
-						</ul>
-
-					</div>
-
-				</div>
-
-				<div class="accordion-section">
-					
-					<h2 class="white">Zambia <i class="fas fa-plus-circle"></i></h2>
-
-					<div class="accordion-sec close">
-
-						<p>The Commonwealth Alumni Association of Zambia (CAAZ) is coordinated by an Executive Committee, led by its Secretary General <span>Tukiya Kanguya</span> (2016 Commonwealth Scholar, MSc Public Health, University of Southampton), President <span>Makweti Sishekanu</span> (2015 Commonwealth Scholar, LLM Energy and Environmental Law, University of Aberdeen) and Vice President <span>Kalunga Nakazwe</span> (2014 Commonwealth Scholar, MSc Psychological Research Methods, University of Sheffield). The association is supported in its work by the British Council in Zambia.</p>
-
-						<ul>
-							<li><a target="_blank" href="https://www.facebook.com/CommonwealthAlumniAssociationofZambia/?_rdc=1&_rdr/">Association Facebook page</a></li>
-							<li>For more information, email <a href="mailto:alumni@cscuk.org.uk">alumni@cscuk.org.uk</a></li>
-						</ul>
-						
-					</div>
-
-				</div>
-
-			</div>
-		</div>
-	</section>
-	
-	<script>
-		const items=document.querySelectorAll('.accordion-section');
-items.forEach((item)=>{
-    item.addEventListener('click',(event)=>{
-		dynamicHeight(item);
-		if(item.children[1].classList.contains("close")){
-			dynamicHeight(item);
-			item.children[1].classList.remove("close");
-			item.style.backgroundColor="#fff";
-			item.style.transition="background-color 0.6s";
-			item.children[0].style.color="#000";
-			item.children[0].style.transition="color 0.1s";
-			
-		}else{
-			item.children[1].style.height="0px";
-			item.children[1].classList.add("close");
-			item.style.backgroundColor="#002A7F";
-			item.style.transition="background-color 0.1s 0.7s";
-			item.children[0].style.color="#fff";
-			item.children[0].style.transition="color 0.1s 0.7s";
-		}
-        setTimeout(()=>{
-            if(item.children[0].children[0].classList.contains('fa-plus-circle')){
-                item.children[0].children[0].classList.remove('fa-plus-circle');
-                item.children[0].children[0].classList.add('fa-minus-circle');
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      .accordion {
+        background-color: #fff;
+        padding: 50px 0px;
+      }
+
+      .accordion-wrap {
+        margin: 0 auto;
+      }
+
+      .accordion-section {
+        border: 1px solid #002a7f;
+        background-color: #002a7f;
+        margin-bottom: 5px;
+      }
+      .accordion-section-togle {
+        background-color: #fff;
+      }
+
+      .accordion-section h2 {
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .accordion-section h2:hover {
+        cursor: pointer;
+      }
+
+      .accordion-section h2 i {
+        margin-top: 2px;
+      }
+
+      .accordion-section p {
+        padding: 10px 20px;
+        color: #333;
+        font-size: 17px;
+        font-weight: 500;
+      }
+
+      .accordion-section ul {
+        margin-left: 15px;
+        padding: 10px 10px 20px 10px;
+        margin-left: 30px;
+      }
+
+      .accordion-section ul li {
+        font-size: 17px;
+        font-weight: 500;
+        color: #333;
+      }
+
+      .accordion-section ul li a {
+        color: #002b7f;
+        text-decoration: underline;
+        transition: all 0.5 ease;
+      }
+
+      .accordion-section ul li a:hover {
+        color: #000;
+        text-decoration: none;
+        transition: all 0.5 ease;
+      }
+
+      .accordion-sec {
+        height: 0;
+        overflow: hidden;
+        transition: all 0.8s;
+      }
+
+      .click {
+        background-color: #fff;
+        color: #333;
+        transition: 1s;
+      }
+      .white {
+        color: white;
+      }
+      .accordion-sec p span {
+        font-weight: 700;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      /*Responsive style*/
+
+      @media all and (max-width: 1300px) {
+        .accordion-wrap {
+          width: 80%;
+          margin: auto;
+        }
+      }
+
+      @media all and (max-width: 360px) {
+        .accordion-section h2 {
+          font-size: 14px;
+        }
+
+        .accordion-section p {
+          font-size: 14px;
+        }
+
+        .accordion-section ul li {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="accordion">
+      <div class="accordion-wrap">
+        <div class="accordion-content">
+          <div class="accordion-section">
+            <h2
+              class="white"
+              aria-label="Click to see details of the Bangladesh Association"
+            >
+              Bangladesh <i class="fas fa-plus-circle"></i>
+            </h2>
+
+            <div class="accordion-sec close">
+              <p>
+                The Bangladesh Association of Commonwealth Scholars and Fellows
+                (BACSAF) is coordinated by <span>Rafiqul Islam</span> (2005
+                Commonwealth Professional Fellow, University of Nottingham). The
+                association is supported in its work by the British Council in
+                Bangladesh.
+              </p>
+
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/groups/1521066128156091"
+                    >Association Facebook group</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/groups/6879243"
+                    >Association LinkedIn group</a
+                  >
+                </li>
+                <li>
+                  <a target="_blank" href="www.bacsaf-bd.org"
+                    >Association website</a
+                  >
+                </li>
+                <li>
+                  For more information, email
+                  <a href="mailto:info@bacsaf-bd.org">info@bacsaf-bd.org</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-section">
+            <h2
+              class="white"
+              aria-label="Click to see details of the Barbados Association"
+            >
+              Barbados <i class="fas fa-plus-circle"></i>
+            </h2>
+
+            <div class="accordion-sec close">
+              <p>
+                The alumni association in Barbados is coordinated by
+                <span>Corey Drakes</span> (2014 Commonwealth Scholar, MSc
+                Physics and Engineering in Medicine, University College London).
+              </p>
+
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/barbadoscommonwealthscholaralumnigroup"
+                    >Association Facebook page</a
+                  >
+                </li>
+                <li>
+                  For more information, email
+                  <a href="mailto:bcalumni246@gmail.com"
+                    >bcalumni246@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-section">
+            <h2
+              class="white"
+              aria-label="Click to see details of the Cameroon Association"
+            >
+              Cameroon <i class="fas fa-plus-circle"></i>
+            </h2>
+
+            <div class="accordion-sec close">
+              <p>
+                The alumni association in Barbados is coordinated by
+                <span>Corey Drakes</span> (2014 Commonwealth Scholar, MSc
+                Physics and Engineering in Medicine, University College London).
+              </p>
+
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/barbadoscommonwealthscholaralumnigroup"
+                    >Association Facebook page</a
+                  >
+                </li>
+                <li>
+                  For more information, email
+                  <a href="mailto:bcalumni246@gmail.com"
+                    >bcalumni246@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-section">
+            <h2
+              class="white"
+              aria-label="Click to see details of the Canada Association"
+            >
+              Canada <i class="fas fa-plus-circle"></i>
+            </h2>
+
+            <div class="accordion-sec close">
+              <p>
+                The Canadian Association of Commonwealth Scholars and Fellows
+                (CACSF) is coordinated by <span>Kevin Goheen</span> (1983
+                Commonwealth Scholar, PhD Naval Architecture, University College
+                London).
+              </p>
+
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/groups/8305511/"
+                    >Association LinkedIn group</a
+                  >
+                </li>
+                <li>
+                  For more information, email
+                  <a href="mailto:alumni@cscuk.org.uk">alumni@cscuk.org.uk</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-section">
+            <h2
+              class="white"
+              aria-label="Click to see details of the Dominican Association"
+            >
+              Dominica <i class="fas fa-plus-circle"></i>
+            </h2>
+
+            <div class="accordion-sec close">
+              <p>
+                Commonwealth of Dominica Commonwealth Scholars Alumni
+                Association (CDCSAA) is managed by a steering committee,
+                coordinated by <span>Jo-Ann George</span> (2008 Commonwealth
+                Scholar, Management and Implementation of Development Projects,
+                University of Manchester).
+              </p>
+
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/groups/1173788099493593/"
+                    >Association Facebook page</a
+                  >
+                </li>
+                <li>
+                  For more information, email
+                  <a href="mailto:dcommonwealthscholar@gmail.com"
+                    >dcommonwealthscholar@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-section click-six">
+            <h2
+              class="white"
+              aria-label="Click to see details of the Ghana Association"
+            >
+              Ghana <i class="fas fa-plus-circle"></i>
+            </h2>
+
+            <div class="accordion-sec close">
+              <p>
+                Commonwealth Scholars & Fellows Alumni, Ghana (CoSFAG) is
+                coordinated by an elected Executive Committee, led by its
+                President <span>John Boulard Forkuor</span> (2010 Commonwealth
+                Shared Scholar, MSc Social Work and Studies, Durham University)
+                and Vice President <span>Solomon Mensa</span> (2009 Commonwealth
+                Shared Scholar, MSc International Banking and Finance,
+                University of Strathclyde). The association is supported in its
+                work by the British Council in Ghana.
+              </p>
+
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/groups/1655642108023804"
+                    >Association Facebook page</a
+                  >
+                </li>
+                <li>
+                  For more information, email
+                  <a href="mailto:cosfag.gh@gmail.com">cosfag.gh@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-section">
+            <h2
+              class="white"
+              aria-label="Click to see details of the Gibraltar Association"
+            >
+              Gibraltar <i class="fas fa-plus-circle"></i>
+            </h2>
+
+            <div class="accordion-sec close">
+              <p>
+                The alumni association in Gibraltar is coordinated by
+                <span>Daniella Tilbury</span> (1990 Commonwealth Scholar, PhD
+                Environmental Education, University of Cambridge).
+              </p>
+
+              <ul>
+                <li>
+                  For more information, email
+                  <a href="mailto:alumni@cscuk.org.uk">alumni@cscuk.org.uk</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-section click-eight">
+            <h2 class="white">Guyana <i class="fas fa-plus-circle"></i></h2>
+
+            <div class="accordion-sec close">
+              <p>
+                The alumni association in Guyana is coordinated by
+                <span>Gina Arjoon</span> (2009 Commonwealth Scholar, MSc Health
+                Economics, University of York).
+              </p>
+
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/groups/8532314/"
+                    >Association LinkedIn group</a
+                  >
+                </li>
+                <li>
+                  For more information, email
+                  <a href="mailto:alumni@cscuk.org.uk">alumni@cscuk.org.uk</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-section click-nine">
+            <h2
+              class="white"
+              aria-label="Click to see details of the India Association"
+            >
+              India <i class="fas fa-plus-circle"></i>
+            </h2>
+
+            <div class="accordion-sec close">
+              <p>
+                The Indian National Alumni Association of Commonwealth Scholars
+                and Fellows of UK is coordinated by its President
+                <span>Dhruva Chaudhry</span> (2009 Commonwealth Academic Fellow,
+                University Hospital Aintree). The association is supported in
+                its work by the British Council in India.
+              </p>
+
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/groups/6749270/"
+                    >Association LinkedIn group</a
+                  >
+                </li>
+                <li>
+                  <a target="_blank" href="http://www.acsfindia.org/"
+                    >Association website</a
+                  >
+                </li>
+                <li>
+                  For more information, email
+                  <a href="mailto:info@acsfindia.org">info@acsfindia.org</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-section click-ten">
+            <h2
+              class="white"
+              aria-label="Click to see details of the Jamaica Association"
+            >
+              Jamaica <i class="fas fa-plus-circle"></i>
+            </h2>
+
+            <div class="accordion-sec close">
+              <p>
+                The alumni association in Jamaica is coordinated by
+                <span>Tarik Dixon</span> (2013 Commonwealth Scholar, MSc Spatial
+                Planning, University College London).
+              </p>
+
+              <ul>
+                <li>
+                  For more information and to join the association Facebook
+                  group, email
+                  <a href="mailto:commonwealthscholar@gmail.com"
+                    >commonwealthscholar@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-section click-eleven">
+            <h2
+              class="white"
+              aria-label="Click to see details of the Kenya Association"
+            >
+              Kenya <i class="fas fa-plus-circle"></i>
+            </h2>
+
+            <div class="accordion-sec close">
+              <p>
+                The Commonwealth Scholarships Alumni Association of Kenya
+                (CSAAK) is coordinated by <span>Maurice Okoth</span> (2009
+                Commonwealth Academic Fellow, Physical Chemistry, University of
+                Strathclyde). The association is supported in its work by the
+                British Council in Kenya.
+              </p>
+
+              <ul>
+                <li>
+                  For more information, email
+                  <a href="mailto:csc.alumni.kenyachapter@gmail.com"
+                    >csc.alumni.kenyachapter@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-section click-twelve">
+            <h2
+              class="white"
+              aria-label="Click to see details of the Lesotho Association"
+            >
+              Lesotho <i class="fas fa-plus-circle"></i>
+            </h2>
+
+            <div class="accordion-sec close">
+              <p>
+                The alumni association in Lesotho is coordinated by
+                <span>Setempe Phoka</span> (2015 Commonwealth Professional
+                Fellow, Dolen Cymru Lesotho Education).
+              </p>
+
+              <ul>
+                <li>
+                  For more information, email
+                  <a
+                    href="http://cscuk.dfid.gov.uk/alumni/associations/alumni@cscuk.org.uk"
+                    >alumni@cscuk.org.uk</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-section click-thirteen">
+            <h2
+              class="white"
+              aria-label="Click to see details of the Malawi Association"
+            >
+              Malawi <i class="fas fa-plus-circle"></i>
+            </h2>
+
+            <div class="accordion-sec close">
+              <p>
+                The alumni association in Malawi is coordinated by an Executive
+                Committee, led by its Chairperson
+                <span>Chrispin Gogoda Mbewe</span> (2014 Commonwealth Scholar,
+                MSc Renewable Energy Systems Engineering, Loughborough
+                University; 2017 Scholar, PhD Renewable Energy ). The
+                association is supported in its work by the British Council in
+                Malawi.
+              </p>
+
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/MwCSCAlumni/"
+                    >Association Facebook page</a
+                  >
+                </li>
+                <li>
+                  <a target="_blank" href="https://twitter.com/MwCSCAlumni"
+                    >Association Twitter</a
+                  >
+                </li>
+                <li>
+                  For more information, email
+                  <a href="mailto:Mw-CSC-Alumni@googlegroups.com"
+                    >Mw-CSC-Alumni@googlegroups.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-section click-fourteen">
+            <h2
+              class="white"
+              aria-label="Click to see details of the Malaysia Association"
+            >
+              Malaysia <i class="fas fa-plus-circle"></i>
+            </h2>
+
+            <div class="accordion-sec close">
+              <p>
+                The alumni association in Malaysia is coordinated by
+                <span>Vaani Muniandy</span> (2015 Commonwealth Scholar, MSc
+                Aquatic Pathobiology, University of Stirling).
+              </p>
+
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/groups/1275116749246290/"
+                    >Association Facebook page</a
+                  >
+                </li>
+                <li>
+                  For more information, email
+                  <a
+                    href="http://cscuk.dfid.gov.uk/alumni/associations/alumni@cscuk.org.uk"
+                    >alumni@cscuk.org.uk</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-section click-fifteen">
+            <h2
+              class="white"
+              aria-label="Click to see details of the Mauritius Association"
+            >
+              Mauritius <i class="fas fa-plus-circle"></i>
+            </h2>
+
+            <div class="accordion-sec close">
+              <p>
+                The United Kingdom Commonwealth Alumni – Mauritius Chapter
+                (UKCAC) is coordinated by its President
+                <span>Satyadev Rosunee</span> (1992 Commonwealth Scholar, MSc
+                Textile Dyeing and Finishing, University of Leeds; 1999
+                Commonwealth Scholar ), Vice President
+                <span>Roshan Ramessur</span> (1985 Commonwealth Scholar, BSc
+                Marine Chemistry, Bangor University), and Secretary
+                <span>Madev Balloo</span> (1998 Canadian Commonwealth Scholar,
+                MSc Agricultural Economics, University of Guelph).
+              </p>
+
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/groups/154972611690163/about/"
+                    >Association Facebook page</a
+                  >
+                </li>
+                <li>
+                  <a target="_blank" href="http://ukcac-mauritius.tripod.com/"
+                    >Association website</a
+                  >
+                </li>
+                <li>
+                  For more information, email
+                  <a
+                    href="http://cscuk.dfid.gov.uk/alumni/associations/alumni@cscuk.org.uk"
+                    >alumni@cscuk.org.uk</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-section click-sixteen">
+            <h2
+              class="white"
+              aria-label="Click to see details of the Namibia Association"
+            >
+              Namibia <i class="fas fa-plus-circle"></i>
+            </h2>
+
+            <div class="accordion-sec close">
+              <p>
+                The alumni association in Namibia is coordinated by
+                <span>Victoria Chali</span> (2017 Commonwealth Professional
+                Fellow, Cardiff University).
+              </p>
+
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/groups/302611070252579/"
+                    >Association Facebook page</a
+                  >
+                </li>
+                <li>
+                  For more information, email
+                  <a href="mailto:alumni@cscuk.org.uk">alumni@cscuk.org.uk</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-section click-seventeen">
+            <h2
+              class="white"
+              aria-label="Click to see details of the Nigeria Association"
+            >
+              Nigeria <i class="fas fa-plus-circle"></i>
+            </h2>
+
+            <div class="accordion-sec close">
+              <p>
+                The Commonwealth Scholars and Fellows Alumni Association Nigeria
+                (COSFAN) is coordinated by an Executive Committee, led by its
+                President <span>Ruth Abiola Adimula</span> (2010 Commonwealth
+                Professional Fellow, The Haven Wolverhampton), Vice President
+                <span>Cyril Ojochide Akagwu</span> (2013 Commonwealth Scholar,
+                MSc Aviation Medicine, King’s College London) and General
+                Secretary <span>Chidi Ezegwu</span> (2011 Commonwealth Shared
+                Scholar, MA Education, Gender and International Development, UCL
+                Institute of Education). The association is supported in its
+                work by the British Council in Nigeria.
+              </p>
+
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/Commonwealth-Scholars-and-Fellows-Alumni-Association-of-Nigeria-Cosfan-2180588168929201/"
+                    >Association Facebook page</a
+                  >
+                </li>
+                <li>
+                  For more information, email
+                  <a
+                    href="http://cscuk.dfid.gov.uk/alumni/associations/alumni@cscuk.org.uk"
+                    >alumni@cscuk.org.uk</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-section click-eighteen">
+            <h2
+              class="white"
+              aria-label="Click to see details of the Pakistan Association"
+            >
+              Pakistan <i class="fas fa-plus-circle"></i>
+            </h2>
+
+            <div class="accordion-sec close">
+              <p>
+                The Pakistan Alumni Association Commonwealth Scholars (PAACS) is
+                coordinated by <span>Khadija Amir</span> (2014 Commonwealth
+                Shared Scholar, MSc Sustainable Development, University of
+                Exeter). The association is supported in its work by the British
+                Council in Pakistan.
+              </p>
+
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/groups/521484144717677/"
+                    >Association Facebook page</a
+                  >
+                </li>
+                <li>
+                  For more information, email
+                  <a href="mailto:alumni@cscuk.org.uk">alumni@cscuk.org.uk</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-section click-nineteen">
+            <h2
+              class="white"
+              aria-label="Click to see details of the Rwanda Association"
+            >
+              Rwanda <i class="fas fa-plus-circle"></i>
+            </h2>
+
+            <div class="accordion-sec close">
+              <p>
+                The Rwanda Commonwealth Scholars and Fellows alumni association
+                is coordinated by <span>Gatera Fiston Kitema</span> (2018
+                Commonwealth Shared Scholar, MSc Public Health for Eye Care,
+                London School of Hygiene and Tropical Medicine).
+              </p>
+
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/groups/998959960448862/?ref=group_browse/"
+                    >Association Facebook page</a
+                  >
+                </li>
+                <li>
+                  For more information, email
+                  <a href="mailto:alumni@cscuk.org.uk">alumni@cscuk.org.uk</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-section click-twenty">
+            <h2
+              class="white"
+              aria-label="Click to see details of the St Lucia Association"
+            >
+              St Lucia <i class="fas fa-plus-circle"></i>
+            </h2>
+
+            <div class="accordion-sec close">
+              <p>
+                The alumni association in St Lucia is coordinated by
+                <span>Margaret Henry Samuel</span> (2012 Commonwealth Distance
+                Learning Scholar, MPH Public Health, University of Liverpool).
+              </p>
+
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/Alumni-Saint-Lucia-Association-1751393298483887/"
+                    >Association Facebook page</a
+                  >
+                </li>
+                <li>
+                  For more information, email
+                  <a href="mailto:alumni@cscuk.org.uk">alumni@cscuk.org.uk</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-section">
+            <h2
+              class="white"
+              aria-label="Click to see details of the Sierra Leone Association"
+            >
+              Sierra Leone <i class="fas fa-plus-circle"></i>
+            </h2>
+
+            <div class="accordion-sec close">
+              <p>
+                The alumni association in Sierra Leone is coordinated by
+                <span>Sonnia-Magba Bu-Buakei Jabbi</span> (2003 Commonwealth
+                Shared Scholar, MSc Management Science, De Montfort University).
+                The association is supported in its work by the British Council
+                in Sierra Leone.
+              </p>
+
+              <ul>
+                <li>
+                  For more information, email
+                  <a href="mailto:csfp.sierraleone@britishcouncil.org"
+                    >csfp.sierraleone@britishcouncil.org</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-section click-twentytwo">
+            <h2
+              class="white"
+              aria-label="Click to see details of the South African Association"
+            >
+              South Africa <i class="fas fa-plus-circle"></i>
+            </h2>
+
+            <div class="accordion-sec close">
+              <p>
+                The Commonwealth Scholars and Fellows Alumni of South Africa
+                (CoSFA-SA) is coordinated by a Steering Committee comprised of
+                the following members: <span>Ryan Daniels</span> (2015
+                Commonwealth Scholar, PhD Zoology, University of Oxford),
+                <span>Lucia Makamure</span> (2016 Commonwealth Distance Learning
+                Scholar, MA Public Policy and Management, University of York),
+                and <span>Keneilwe Mampuru</span> (2017 Commonwealth
+                Professional Fellow, Learn to Re-create). The association is
+                supported in its work by the British Council in
+              </p>
+
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/Commonwealth-Scholars-Fellows-Alumni-South-Africa-Public-Page-113309030465741/"
+                    >Association Facebook page</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/groups/190050932422102/"
+                    >Association Facebook group</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/groups/8945762/"
+                    >Association LinkedIn group</a
+                  >
+                </li>
+                <li>
+                  For more information, email
+                  <a href="mailto:alumni@cscuk.org.uk">alumni@cscuk.org.uk</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-section">
+            <h2
+              class="white"
+              aria-label="Click to see details of the Sri Lankan Association"
+            >
+              Sri Lanka <i class="fas fa-plus-circle"></i>
+            </h2>
+
+            <div class="accordion-sec close">
+              <p>
+                The alumni association in Sri Lanka is currently being
+                established. The association is supported in its work by the
+                British Council in Sri Lanka.
+              </p>
+
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/groups/1323832974302988/"
+                    >Association Facebook group</a
+                  >
+                </li>
+                <li>
+                  For more information, email
+                  <a href="mailto:alumni@cscuk.org.uk">alumni@cscuk.org.uk</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-section">
+            <h2
+              class="white"
+              aria-label="Click to see details of the Tanzanian Association"
+            >
+              Tanzania <i class="fas fa-plus-circle"></i>
+            </h2>
+
+            <div class="accordion-sec close">
+              <p>
+                The alumni association in Tanzania is currently being
+                established. The association is supported in its work by the
+                British Council in Tanzania.
+              </p>
+
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/groups/1323832974302988/"
+                    >Association Facebook group</a
+                  >
+                </li>
+                <li>
+                  For more information, email
+                  <a href="mailto:alumni@cscuk.org.uk">alumni@cscuk.org.uk</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-section">
+            <h2
+              class="white"
+              aria-label="Click to see details of the Trinidad and Tobago Association"
+            >
+              Trinidad and Tobago <i class="fas fa-plus-circle"></i>
+            </h2>
+
+            <div class="accordion-sec close">
+              <p>
+                The alumni association in Trinidad and Tobago is coordinated by
+                <span>Sharon Ali Aziz</span> (2016 Commonwealth Shared Scholar,
+                MSc Media Management, University of Stirling).
+              </p>
+
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/CommonwealthScholars/"
+                    >Association Facebook page</a
+                  >
+                </li>
+                <li>
+                  For more information, email
+                  <a href="mailto:alumni@cscuk.org.uk">alumni@cscuk.org.uk</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-section">
+            <h2
+              class="white"
+              aria-label="Click to see details of the Uganda Association"
+            >
+              Uganda <i class="fas fa-plus-circle"></i>
+            </h2>
+
+            <div class="accordion-sec close">
+              <p>
+                The alumni association in Uganda is coordinated by
+                <span>Bright Arthur Niwagaba</span> (2012 Commonwealth Scholar,
+                MSc Computer Forensics and System Security, University of
+                Greenwich). The association is supported in its work by the
+                British Council in Uganda.
+              </p>
+
+              <ul>
+                <li>
+                  For more information, email
+                  <a
+                    href="http://cscuk.dfid.gov.uk/alumni/associations/alumni@cscuk.org.uk"
+                    >alumni@cscuk.org.uk</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-section">
+            <h2
+              class="white"
+              aria-label="Click to see details of the Zambia Association"
+            >
+              Zambia <i class="fas fa-plus-circle"></i>
+            </h2>
+
+            <div class="accordion-sec close">
+              <p>
+                The Commonwealth Alumni Association of Zambia (CAAZ) is
+                coordinated by an Executive Committee, led by its Secretary
+                General <span>Tukiya Kanguya</span> (2016 Commonwealth Scholar,
+                MSc Public Health, University of Southampton), President
+                <span>Makweti Sishekanu</span> (2015 Commonwealth Scholar, LLM
+                Energy and Environmental Law, University of Aberdeen) and Vice
+                President <span>Kalunga Nakazwe</span> (2014 Commonwealth
+                Scholar, MSc Psychological Research Methods, University of
+                Sheffield). The association is supported in its work by the
+                British Council in Zambia.
+              </p>
+
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/CommonwealthAlumniAssociationofZambia/?_rdc=1&_rdr/"
+                    >Association Facebook page</a
+                  >
+                </li>
+                <li>
+                  For more information, email
+                  <a href="mailto:alumni@cscuk.org.uk">alumni@cscuk.org.uk</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const items = document.querySelectorAll(".accordion-sec");
+      items.forEach((item) => {
+        item.addEventListener("click", (event) => {
+          dynamicHeight(item);
+          if (item.children[1].classList.contains("close")) {
+            dynamicHeight(item);
+            item.children[1].classList.remove("close");
+            item.style.backgroundColor = "#fff";
+            item.style.transition = "background-color 0.6s";
+            item.children[0].style.color = "#000";
+            item.children[0].style.transition = "color 0.1s";
+          } else {
+            item.children[1].style.height = "0px";
+            item.children[1].classList.add("close");
+            item.style.backgroundColor = "#002b7f";
+            item.style.transition = "background-color 0.1s 0.7s";
+            item.children[0].style.color = "#fff";
+            item.children[0].style.transition = "color 0.1s 0.7s";
+          }
+          setTimeout(() => {
+            if (
+              item.children[0].children[0].classList.contains("fa-plus-circle")
+            ) {
+              item.children[0].children[0].classList.remove("fa-plus-circle");
+              item.children[0].children[0].classList.add("fa-minus-circle");
+            } else {
+              item.children[0].children[0].classList.remove("fa-minus-circle");
+              item.children[0].children[0].classList.add("fa-plus-circle");
             }
-            else{
-                item.children[0].children[0].classList.remove('fa-minus-circle');
-                item.children[0].children[0].classList.add('fa-plus-circle');
-            }
-        },750);
-        
-    });
-});
+          }, 750);
+        });
+      });
 
-function dynamicHeight(item){
-	const heading=item.children[0].offsetHeight;
-	const para=item.children[1].children[0].offsetHeight;
-	const ul=item.children[1].children[1].offsetHeight;
-	let sum=heading+para+ul;
-	item.children[1].style.height=sum+"px";
-
-}
-	</script>
-	
-</body>
+      function dynamicHeight(item) {
+        const heading = item.children[0].offsetHeight;
+        const para = item.children[1].children[0].offsetHeight;
+        const ul = item.children[1].children[1].offsetHeight;
+        let sum = heading + para + ul;
+        item.children[1].style.height = sum + "px";
+      }
+    </script>
+  </body>
 </html>
